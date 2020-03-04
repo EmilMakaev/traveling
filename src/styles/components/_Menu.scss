@@ -1,0 +1,89 @@
+.header {
+  height: 7rem;
+  //width: 102.4rem;
+  margin: 0 auto;
+  background: #FFD241;
+}
+
+.burger {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.3rem;
+  &__btn {
+    border: none;
+    border-radius: 0;
+    background-color: black;
+    height: .4rem;
+    width: 3rem;
+    margin-top: 3.3rem;
+    &::before,
+    &::after {
+      background-color: black;
+      height: .5rem;
+      width: 3rem;
+      content: "";
+      display: block;
+    }
+    &::before {
+      transform: translateY(-1rem)
+    }
+    &::after {
+      transform: translateY(.4rem)
+    }
+  }
+}
+
+//////////////////////////// modal window
+.menu {
+  /* display: none; */
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  right: 0;
+  background: #FFD241;
+  width: 30%;
+  height: 100vh;
+  &__items {
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    margin: 10% auto;
+    padding: 0;
+    text-align: center;
+  }
+  &__item {
+    margin: 1rem 0;
+    & a {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+  }
+  &__btn {
+    border: 1px solid black;
+    width: 20rem;
+    height: 4.9rem;
+    background: #FFD241;
+    border-radius: 2.95rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+}
+
+.menu-display {
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  /* display: none; */
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}

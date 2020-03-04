@@ -1,0 +1,82 @@
+.request {
+  margin-top: 3.7rem;
+  width: 76.2%;
+  &__title {
+    font-size: 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  &__information {
+    text-decoration: underline;
+    margin-bottom: 2.8rem;
+  }
+  &__method {
+    text-decoration: underline;
+    margin-top: 2.8rem;
+  }
+  &__you {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+  }
+  &__trip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
+  }
+}
+
+.required-fields {
+  color: #CB0037;
+}
+
+.input-contacts {
+  margin-top: .8rem;
+  width: 38rem;
+  height: 5rem;
+  border-radius: .3rem;
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  -khtml-border-radius: .3rem;
+  background: #ffffff !important;
+  outline: none;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.additional-verification {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+  &__input {
+    font-size: 110%;
+    display: inline;
+    zoom: 1.8;
+  }
+}
+
+.btn {
+  width: 28rem;
+  height: 4.9rem;
+  background: #FFD241;
+  border-radius: 2.95rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-main {
+  margin: 3rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
